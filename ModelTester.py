@@ -17,6 +17,9 @@ for i in range(n):
 
 m, b = LinearRegression.gradient_descent(X, y, 0.01, 1000)
 
+print("\n")
+print(m, b)
+
 new_data = [m * x_val + b for x_val in X]
 
 plt.plot(X, y, 'o')
