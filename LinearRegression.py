@@ -1,14 +1,14 @@
 def gradient_for_c(X, y, m, c):
     ans = 0
     for i in range(len(X)):
-        ans += (y[i] - (m * x[i] + c))
+        ans += (y[i] - (m * X[i] + c))
     ans = (-2/len(X)) * ans
     return ans
 
 def gradient_for_m(X, y, m, c):
     ans = 0
     for i in range(len(X)):
-        ans += x[i] * (y[i] - (m * x[i] + c))
+        ans += X[i] * (y[i] - (m * X[i] + c))
     ans = (-2/len(X)) * ans
     return ans
 
