@@ -1,5 +1,6 @@
 import sys
 import LinearRegression
+
 from matplotlib import pyplot as plt
 
 n = int(input("Enter number of values: "))
